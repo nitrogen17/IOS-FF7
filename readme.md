@@ -4,7 +4,7 @@
 [![License][license-image]][license-url]
 [![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
 
-FF7 App is a wikipedia version for Final Fantasy 7: Remake Edition. This app will provide the detail of every character from Final Fantasy Series by using Basic Components of developing iOS App. This is only a sample app for my studies on iOS Dev, feel free to explore, fork, and modify.
+FF7 App is a Wikipedia version for Final Fantasy 7: Remake Edition. This app will provide the detail of every character from the Final Fantasy Series by using the Basic Components of developing an iOS App. This is only a sample app for my studies on iOS Dev, feel free to explore, fork, and modify.
 
 ## Mini Feature
 
