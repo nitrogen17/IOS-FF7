@@ -15,6 +15,7 @@ FF7 App is a Wikipedia version for Final Fantasy 7: Remake Edition. This app wil
 - [x] Based on MVC (Model View Controller)
 - [x] Rx(WIP)
 - [x] Observer Pattern(WIP)
+- [x] MVC to MVP(WIP)
 
 ## Screenshot
 
