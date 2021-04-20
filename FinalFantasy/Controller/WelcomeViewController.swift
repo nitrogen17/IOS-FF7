@@ -10,8 +10,12 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    // MARK: - Properties
+    
     @IBOutlet weak var welcomRefresher: UIActivityIndicatorView!
     
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         

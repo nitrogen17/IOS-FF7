@@ -8,9 +8,12 @@
 
 import UIKit
 
+private let reusableCell = "tableCell"
+
 class HomepageViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    /// Tableview Reference from IB, used in register UINib (Custom Cell View)
+    // MARK: - Properties
+    
     @IBOutlet weak var homepageTableView: UITableView!
     
     var homepageArr: [TableData] = []
@@ -23,7 +26,7 @@ class HomepageViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as! HomepageTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: reusableCell, for: indexPath) as! HomepageTableViewCell
         
         cell.nameCell.text = homepageArr[indexPath.row].name
         cell.alterNameCell.text = homepageArr[indexPath.row].description
@@ -55,7 +58,7 @@ class HomepageViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        homepageTableView.register(UINib(nibName: "HomepageTableViewCell", bundle: nil), forCellReuseIdentifier: "tableCell")
+        homepageTableView.register(UINib(nibName: "HomepageTableViewCell", bundle: nil), forCellReuseIdentifier: reusableCell)
         
         self.navigationItem.hidesBackButton = true
         
@@ -65,7 +68,6 @@ class HomepageViewController: UIViewController, UITableViewDataSource, UITableVi
         
         homepageArr.append(TableData("Sephiroth", "One-Winged Angel","セフィロス", "There was one SOLDIER named Sephiroth, who was better than the rest, but when he found out about the terrible experiments that made him, he began to hate Shinra.", "Sephiroth", "bg5"))
         
-        print(" 2 Home")
     }
 }
 
